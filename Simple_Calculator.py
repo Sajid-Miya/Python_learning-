@@ -9,6 +9,9 @@ elif operator == '-':
 elif operator == '*':
     print(f"The multiplication of Number_1 and Number_2 is {Number_1 * Number_2}")
 elif operator == '/':
-    print(f"The division of Number_1 and Number_2 is {Number_1 / Number_2}")
+    if Number_2 == 0:
+        print("Division by Zero is not allowed")
+    else:
+        print(f"The division of Number_1 and Number_2 is {Number_1 / Number_2}")
 else:
     print("Enter a valid operator")
